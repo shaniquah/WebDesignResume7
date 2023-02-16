@@ -1,0 +1,28 @@
+ /* The animation code */
+@keyframes animatedLogo {
+  
+  0%   {filter: none;
+        transform: rotate(90deg);}
+  25%  {filter: hue-rotate(90deg) drop-shadow(16px -16px 20px red);}
+  37.5%{filter: none;}
+  50%  {filter: drop-shadow(-16px 16px 20px red);
+        transform: rotate(-90deg);}
+  75%  {filter: none;}
+  100% {filter: saturate(200%) drop-shadow(16px 16px 20px red);}
+} 
+
+/* The element to apply the animation to */
+.images { /* Specifies selection of the img element class in the div */
+  width: 100px; /* Sets width of image */
+  height: 100px;  /* Sets height of image */
+  border: 5px solid transparent;  /* Sets the image border width, style and color */
+  border-radius: 50%; /* Sets image border to rounded */
+}
+
+.images:hover { /* Sets animation to only work when mouse is hovering over the image */
+  animation-name: animatedLogo; /* Sets height of image */
+  animation-duration: 3s; /* Sets duration of each animation cycle */
+  animation-iteration-count:infinite; /* Sets number of times each animation cycle repeats itself */
+  animation-timing-function: ease; /* Sets progression of animation for each cycle */
+  animation-direction: alternate; /* Sets how animation cycles play */
+} 

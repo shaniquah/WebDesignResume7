@@ -1,0 +1,23 @@
+/* Animation code */
+@keyframes animatedSquare {
+  0%    {background-color: red; /* changes color animation */
+          transform: translateY(100px);}  /* changes position animation on Y-axis (moves along Y-axis) */
+  25%   {background-color: yellow;  /* changes color animation */
+          border-radius: 50%;}    /* changes shape animation (rounds edges, turning square to circle) */
+  50%   {background-color: blue;  /* changes color animation */
+          transform: translateX(100px);}  /* changes position animation on X-axis (moves along X-axis) */
+  100%  {background-color: green; /* changes color animation */
+          transform: rotate(90deg);}  /* changes rotation animation by turning shape by 90 degrees */
+}
+
+/* Element to apply animation to */
+div {
+  width: 100px; /* determines width attribute of square shape */
+  height: 100px;  /* determines height attribute of square shape */
+  background-color: red;  /* sets initial color of shape */
+  animation-name: animatedSquare; /* names keyframe for animation code to be written under */
+  animation-duration: 4s; /* determines how quick/subtle animation is */
+  animation-iteration-count: infinite; /* sets number of times animation cycle should occur(repeat itself) */
+  animation-timing-function: linear;  /* sets how animation progresses over each cycle */
+  animation-direction: alternate; /* sets order in which animation plays (reverse or alternate cycles) */
+}

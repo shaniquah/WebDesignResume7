@@ -1,2 +1,2 @@
-# Web Design Resumes
- Resume Challenges from Web Design course
+# Web Design Resume7
+ Resume Challenge 7 from Web Design course
